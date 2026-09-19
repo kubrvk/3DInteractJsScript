@@ -1,0 +1,12 @@
+{
+  "name": "3d-interact-js",
+  "version": "1.2.0",
+  "description": "Lightweight WebGL & PBR 3D Model Configurator Engine",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx serve . -p 8080"
+  },
+  "keywords": ["webgl", "3d", "pbr", "threejs", "configurator", "gltf"],
+  "author": "kubrvk",
+  "license": "MIT"
+}

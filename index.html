@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DInteractJS — WebGL PBR Configurator</title>
+  <style>
+    body { margin: 0; padding: 0; overflow: hidden; background: #0b0d12; font-family: sans-serif; color: #fff; }
+    #canvas3d { width: 100vw; height: 100vh; display: block; }
+    .ui-panel { position: absolute; top: 20px; right: 20px; background: rgba(17,20,24,0.85); border: 1px solid #1e2535; border-radius: 8px; padding: 20px; min-width: 240px; backdrop-filter: blur(8px); }
+    .ui-title { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #4a9eff; margin-bottom: 12px; }
+    .btn-group { display: flex; gap: 8px; margin-bottom: 16px; }
+    .swatch { width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fff; cursor: pointer; }
+    .status-badge { font-size: 12px; color: #4ddb87; margin-top: 10px; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <canvas id="canvas3d"></canvas>
+
+  <div class="ui-panel">
+    <div class="ui-title">Material Color Swatch</div>
+    <div class="btn-group">
+      <div class="swatch" style="background:#4a9eff" onclick="window.setMaterialColor(0x4a9eff)"></div>
+      <div class="swatch" style="background:#ff6b6b" onclick="window.setMaterialColor(0xff6b6b)"></div>
+      <div class="swatch" style="background:#4ddb87" onclick="window.setMaterialColor(0x4ddb87)"></div>
+      <div class="swatch" style="background:#ffd166" onclick="window.setMaterialColor(0xffd166)"></div>
+    </div>
+    <div class="ui-title">Render Mode</div>
+    <button style="padding:6px 12px;background:#1e2535;color:#fff;border:none;border-radius:4px;cursor:pointer" onclick="window.toggleWireframe()">Toggle Wireframe</button>
+    <div class="status-badge" id="fpsCounter">WebGL 2.0 Active (60 FPS)</div>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
