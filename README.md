@@ -1,99 +1,100 @@
-# 3DInteractJS 🧊
-> **Etkileşimli PBR 3D Materyal Stüdyosu • WebGL 2.0 & Three.js CAD Konfigüratörü**
+# 3DInteractJS
+> Interactive PBR 3D Material Studio • WebGL 2.0 & Three.js CAD Configurator
 
-[![Canlı Demo](https://img.shields.io/badge/Canl%C4%B1_Demo-3dinteract.web.app-4f46e5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://3dinteract.web.app)
-[![Lisans](https://img.shields.io/badge/Lisans-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![3D Engine](https://img.shields.io/badge/3D_Motoru-Three.js_r128_WebGL_2.0-black?style=for-the-badge&logo=three.js)](https://threejs.org)
-[![Arayüz](https://img.shields.io/badge/Aray%C3%BCz-Koyu_CAD_Grid_%26_Beyaz_HUD-indigo?style=for-the-badge&logo=css3)](https://developer.mozilla.org)
-[![Dil](https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e_%7C_English-green?style=for-the-badge)](https://3dinteract.web.app)
-
----
-
-## 📸 Canlı Önizleme (Preview)
-
-### CAD Çalışma Tezgahı & PBR Materyal Stüdyosu
-Karanlık PBR grid zemin, döner stand, neon hedefleme halkası, sağda yüzen beyaz tasarım paneli ve ekranın altında yüzen modern HUD rozeti:
-![3DInteractJS CAD Stüdyo Önizleme](docs/preview.png)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-3dinteract.web.app-4f46e5?style=for-the-badge)](https://3dinteract.web.app)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![3D Engine](https://img.shields.io/badge/3D_Engine-Three.js_r128_WebGL_2.0-black?style=for-the-badge)](https://threejs.org)
+[![Interface](https://img.shields.io/badge/Interface-Dark_CAD_Grid_White_HUD-indigo?style=for-the-badge)](https://developer.mozilla.org)
+[![Language Support](https://img.shields.io/badge/Language-English_%7C_Turkish-green?style=for-the-badge)](https://3dinteract.web.app)
 
 ---
 
-## 🌟 Öne Çıkan Özellikler
+## Preview
 
-### 1. Profesyonel CAD & PBR Stüdyo Mimarisi
-- **Doğrudan Açılış (Login Engeli Yok)**: Kullanıcı deneyimini kesintiye uğratmamak adına giriş ekranı olmadan doğrudan tam ekran interaktif 3D çalışma tezgahı olarak açılır.
-- **Koyu CAD Izgarası & PBR Zemin**: Endüstriyel tasarım araçlarına (Blender, Maya, SolidWorks) uygun hassas ızgara zemini, yön eksenleri ve ışık yansıtıcı döner platform.
-- **Yüzen Saf Beyaz HUD Panelleri**:
-  - Sol üstte marka, anlık FPS sayacı, `[ TR | EN ]` dil seçici ve yüksek çözünürlüklü PNG ekran görüntüsü alma aracı.
-  - Sağda gerçek zamanlı PBR parametre kontrol paneli.
-  - Altta şık ve göze batmayan yüzen telif rozeti (`Developed by Beraat Yetkin` - `GitHub`).
-
-### 2. Gerçek Zamanlı PBR (Fizik Tabanlı Render) Kontrolleri
-- **3D Geometri Seçimi**: Torus Knot, Polyhedron, Silindir, Küre, Küp ve Halka modelleri arasında tek tıkla geçiş.
-- **Yüzey Materyal Ayarları**:
-  - Yüzey Temel Rengi (Hex Color Picker).
-  - Mikro Pürüzlülük (*Roughness*: 0.00 - 1.00).
-  - Metalik Oran (*Metalness*: 0.00 - 1.00).
-  - Optik Geçirgenlik / Cam Etkisi (*Transmission / Glass*: 0.00 - 1.00).
-- **Stüdyo Işık Atmosferleri**: *Koyu Stüdyo*, *Cyber Neon*, *Sıcak Altın* ve *Derin Uzay* HDR ışık simülasyonları.
-- **Tel Kafes (Wireframe) & Otomatik Döndürme (Auto-Rotate)** modları.
-- **Hazır Tasarımcı Paletleri**: *Titanyum*, *Altın Fırça*, *Zümrüt*, *Yakut Parlak*, *Buzlu Cam*, *Karbon*, *Bakır Tel*, *Obsidyen*.
-
-### 3. Çift Dilli Tam Destek (TR | EN)
-- Sol üstteki `[ TR | EN ]` dil seçici ile stüdyodaki tüm geometri adları, materyal parametreleri, ışık modları ve palet etiketleri Türkçe ve İngilizce arasında anında dönüştürülür.
+### CAD Workbench & PBR Material Studio
+Dark PBR grid workbench, rotation pedestal, neon target ring, floating white parameter controls, and modern bottom HUD pill badge:
+![3DInteractJS CAD Studio Preview](docs/preview.png)
 
 ---
 
-## 🛠️ Teknoloji Yığını (Tech Stack)
+## Key Features
 
-| Bileşen | Teknoloji | Açıklama |
+### Professional CAD & PBR Studio Architecture
+- Immediate Interactive Access: Launches directly into full-viewport 3D workbench without login barriers.
+- Dark CAD Grid & PBR Stage: Industrial design environment inspired by Blender, Maya, and SolidWorks featuring coordinate axes, orientation compass, and turntable floor.
+- Floating White HUD Overlays:
+  - Top-left branding, live FPS performance monitor, bilingual selector, and high-resolution PNG snapshot capture.
+  - Right-side real-time physical material parameter adjustment panel.
+  - Bottom subtle floating attribution pill badge (Developed by Beraat Yetkin - GitHub).
+
+### Real-Time Physically Based Rendering (PBR) Controls
+- 3D Model Geometries: Torus Knot, Polyhedron, Cylinder, Sphere, Cube, and Ring meshes.
+- Surface Material Properties:
+  - Base Color (Hex Color Picker).
+  - Micro Roughness (0.00 - 1.00).
+  - Metalness (0.00 - 1.00).
+  - Optical Transmission / Glass (0.00 - 1.00).
+- Studio Lighting Environments: Dark Studio, Cyber Neon, Warm Gold, and Deep Space HDRI configurations.
+- Wireframe and Auto-Rotation orbital camera modes.
+- Curated Designer Presets: Titanium, Brushed Gold, Emerald, Ruby Gloss, Frosted Glass, Carbon, Copper Wire, Obsidian.
+
+### Bilingual Support (English | Turkish)
+- Instant language toggle switching all mesh labels, material controls, lighting modes, and preset buttons between English and Turkish.
+- Default language is English.
+
+---
+
+## Tech Stack
+
+| Layer | Technology | Description |
 | :--- | :--- | :--- |
-| **3D Rendering** | Three.js r128 (WebGL 2.0) | PBR MeshPhysicalMaterial, OrbitControls, gölge haritaları |
-| **Arayüz (UI)** | HTML5, CSS3 Glassmorphism | Yüzen saf beyaz yarı saydam HUD panelleri, modern tipografi |
-| **İkonlar** | Bootstrap Icons v1.11.3 | Vektörel stüdyo ikonları |
-| **Yayın** | Firebase Hosting | Google CDN üzerinden optimize edilmiş yüksek hızlı statik barındırma |
+| 3D Rendering | Three.js r128 (WebGL 2.0) | MeshPhysicalMaterial, OrbitControls, shadow mapping |
+| UI & HUD | HTML5, CSS3 Glassmorphism | Floating white translucent panels, modern typography |
+| Icons | Bootstrap Icons v1.11.3 | Studio tool icons |
+| Hosting | Firebase Hosting | High-speed global edge distribution |
 
 ---
 
-## 📁 Proje Dizin Yapısı
+## Directory Structure
 
 ```
 3DInteractJsScript/
-├── index.html              # 3D motoru, WebGL canvas ve HUD kontrolleri
-├── docs/                   # Dokümantasyon ve ekran görüntüleri
-│   └── preview.png         # 3D CAD stüdyosu yüksek çözünürlüklü önizleme
-└── README.md               # Proje dokümantasyonu
+├── index.html              # 3D engine, WebGL canvas, and HUD controls
+├── docs/                   # Documentation assets and screenshots
+│   └── preview.png         # High-resolution CAD studio preview
+└── README.md               # Project documentation
 ```
 
 ---
 
-## ⚡ Hızlı Başlangıç (Local Setup)
+## Getting Started
 
-1. Depoyu klonlayın:
+1. Clone the repository:
    ```bash
    git clone https://github.com/kubrvk/3DInteractJsScript.git
    cd 3DInteractJsScript
    ```
-2. `index.html` dosyasını tarayıcınızda açın:
+2. Open `index.html` directly in your browser:
    ```bash
    start index.html
    ```
-3. Alternatif yerel HTTP sunucusu ile çalıştırmak için:
+3. Alternatively, serve with any local HTTP server:
    ```bash
    npx serve .
    ```
-4. Tarayıcınızda `http://localhost:3000` adresine gidin.
+4. Access `http://localhost:3000` in your browser.
 
 ---
 
-## 🌐 Canlı Sistem
+## Live System
 
-- **Canlı URL**: [https://3dinteract.web.app](https://3dinteract.web.app)
+- Live URL: [https://3dinteract.web.app](https://3dinteract.web.app)
 
 ---
 
-## 👤 Geliştirici
+## Author
 
-**Developed by Beraat Yetkin**
+Developed by Beraat Yetkin
 - GitHub: [@kubrvk](https://github.com/kubrvk)
-- Proje Deposu: [3DInteractJsScript](https://github.com/kubrvk/3DInteractJsScript)
-- Portfolyo: [Beraat Yetkin Portfolio](https://github.com/kubrvk/portfolio)
+- Repository: [3DInteractJsScript](https://github.com/kubrvk/3DInteractJsScript)
+- Portfolio: [Beraat Yetkin Portfolio](https://github.com/kubrvk/portfolio)
